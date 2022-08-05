@@ -515,7 +515,16 @@ updateRecords(recordCollection, 5439, 'artist', 'ABBA');
 
 // Iterate with JavaScript While Loops
 
+// Setup
+const myArray = [];
 
+// Only change code below this line
+// myArray should equal [5, 4, 3, 2, 1, 0].
+let i = 5
+while (i >= 0) { 
+    myArray.push(i)
+    i--
+}
 
 
 
