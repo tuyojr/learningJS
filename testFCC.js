@@ -599,6 +599,23 @@ function multiplyAll(arr) {
 multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
 
 
+// Iterate with JavaScript Do...While Loops
+
+// Setup
+const myArray4 = [];
+let k = 10;
+
+// Only change code below this line
+/*
+Change the while loop in the code to a do...while loop so the 
+loop will push only the number 10 to myArray, and k will be 
+equal to 11 when your code has finished running.
+*/
+do {
+    myArray4.push(k);
+    k++;
+} while (k < 5) 
+
 
 
 
