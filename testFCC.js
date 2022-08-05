@@ -526,6 +526,17 @@ while (i >= 0) {
     i--
 }
 
+// Iterate with JavaScript For Loops
+
+// Setup
+const myArray1 = [];
+
+// Only change code below this line
+// Use a for loop to push the values 1 through 5 onto myArray
+for (let i = 1; i < 6; i++) {
+    myArray1.push(i)
+}
+
 
 
 
