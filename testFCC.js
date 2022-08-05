@@ -759,6 +759,20 @@ function convertToInteger(str) {
 
 console.log(convertToInteger("10011"));
 
+// Use the Conditional (Ternary) Operator
+
+function checkEqual(a, b) {
+    // a ? b : c
+    /*
+    a = condition
+    b = code that runs if condition is true
+    c = code that runs if condition is false
+    */ 
+    return a == b ? "Equal" : "Not Equal"
+}
+
+checkEqual(1, 2);
+
 
 
 
