@@ -397,6 +397,10 @@ function checkObj(obj, checkProp) {
 }
 
 
+// Manipulating Complex Objects
+
+
+
 
 
 
