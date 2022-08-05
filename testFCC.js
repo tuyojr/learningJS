@@ -399,6 +399,29 @@ function checkObj(obj, checkProp) {
 
 // Manipulating Complex Objects
 
+const myMusic = [
+    {
+        "artist": "Billy Joel",
+        "title": "Piano Man",
+        "release_year": 1973,
+        "formats": [
+            "CD",
+            "8T",
+            "LP"
+        ],
+        "gold": true
+    }, //added code here
+    {
+        "artist": "J.Cole",
+        "title": "Love Yourz",
+        "release_year": 2014,
+        "formats": [
+            "CD",
+            "Digital",
+            "8T"
+        ]
+    } //stopped here
+];
 
 
 
