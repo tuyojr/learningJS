@@ -719,6 +719,16 @@ function randomFraction() {
 console.log(randomFraction())
 
 
+// generate random whole numbers
+
+function randomWholeNum() {
+
+    // Only change code below this line
+
+    return Math.floor(Math.random() * 10);
+}
+
+console.log(randomWholeNum())
 
 
 
