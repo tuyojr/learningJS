@@ -1,4 +1,4 @@
-// if/else if statements I
+// if/else if statements I (Under Basic JavaScript)
 
 function test(num){
     if (num > 15){
@@ -815,6 +815,10 @@ function rangeOfNumbers(startNum, endNum) {
 };
 
 console.log(rangeOfNumbers(1, 5))
+
+
+// Compare Scopes of the var and let Keywords (under ECMAScript6 or ES6)
+// (ECMA = European Computer Manufacturers Association)
 
 
 
