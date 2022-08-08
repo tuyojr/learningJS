@@ -841,6 +841,26 @@ function checkScope() {
 }
 
 
+// Mutate an Array Declared with const
+
+const s = [5, 7, 2];
+function editInPlace() {
+    // Only change code below this line
+    s[0] = 2
+    s[1] = 5
+    s[2] = 7
+    // Using s = [2, 5, 7] would be invalid
+    /* this line below supposedly prints out the array orderly 
+    (saw this on twitter, couldn't figure out how to try it)
+    */
+    // for (const elem of s) {
+    //     setTimeout(() => console.log(elem), elem);
+    // }
+    // Only change code above this line
+}
+editInPlace();
+
+
 
 
 
