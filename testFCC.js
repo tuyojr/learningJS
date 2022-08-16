@@ -1211,6 +1211,9 @@ thermos.temperature = 26;
 temp = thermos.temperature; // 26 in Celsius
 
 
+//Created a module script in the index.html file
+
+
 
 
 
