@@ -1214,22 +1214,39 @@ temp = thermos.temperature; // 26 in Celsius
 //Created a module script in the index.html file
 
 
-// Using export to Share a Code Block
+// // Using export to Share a Code Block
+
+// /*
+// There are two string-related functions in the editor. Export both 
+// of them using the method of your choice.
+// */
+
+// const uppercaseString = (string) => {
+//     return string.toUpperCase();
+// }
+
+// const lowercaseString = (string) => {
+//     return string.toLowerCase()
+// }
+
+// export { uppercaseString, lowercaseString }
+
+
+// Reuse JavaScript Code Using import
 
 /*
-There are two string-related functions in the editor. Export both 
-of them using the method of your choice.
-*/
+Add the appropriate import statement that will allow the current 
+file to use the uppercaseString and lowercaseString functions you 
+exported in the previous lesson. These functions are in a file 
+called string_functions.js, which is in the same directory as the current file.
+*/ 
 
-const uppercaseString = (string) => {
-    return string.toUpperCase();
-}
+import { uppercaseString, lowercaseString } from './exportFiles.js';
 
-const lowercaseString = (string) => {
-    return string.toLowerCase()
-}
+// Only change code above this line
 
-export { uppercaseString, lowercaseString }
+uppercaseString("hello");
+lowercaseString("WORLD!");
 
 
 
