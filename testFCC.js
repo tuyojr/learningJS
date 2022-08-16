@@ -1371,6 +1371,18 @@ makeServerRequest3.catch(error => {
 
 
 
+// Using the Test method (under REGULAR EXPRESSIONS)
+
+/*
+Apply the regex myRegex on the string myString using the .test() method.
+*/ 
+
+let myString = "Hello, World!";
+let myRegex = /Hello/;
+let result1 = myRegex.test(myString); // Change this line
+
+
+
 
 
 
