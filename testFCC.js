@@ -1238,7 +1238,7 @@ temp = thermos.temperature; // 26 in Celsius
 Add the appropriate import statement that will allow the current 
 file to use the uppercaseString and lowercaseString functions you 
 exported in the previous lesson. These functions are in a file 
-called string_functions.js, which is in the same directory as the current file.
+called exportFiles.js, which is in the same directory as the current file.
 */ 
 
 import { uppercaseString, lowercaseString } from './exportFiles.js';
@@ -1247,6 +1247,22 @@ import { uppercaseString, lowercaseString } from './exportFiles.js';
 
 uppercaseString("hello");
 lowercaseString("WORLD!");
+
+
+
+// Using * to Import Everything from a File
+
+/*
+The code in this file requires the contents of the file: exportFiles.js, 
+that is in the same directory as the current file. Use the import * as 
+syntax to import everything from the file into an object called stringFunctions.
+*/
+
+import * as stringFunctions from './exportFiles.js'
+// Only change code above this line
+
+stringFunctions.uppercaseString("hello");
+stringFunctions.lowercaseString("WORLD!");
 
 
 
