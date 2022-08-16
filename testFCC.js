@@ -1269,6 +1269,22 @@ stringFunctions.lowercaseString("WORLD!");
 
 
 
+// Importing a default export
+
+/*
+In the following code, import the default export from the exportFiles.js file, 
+found in the same directory as this file. Give the import the name subtract.
+*/
+
+// without the curly braces, default export is imported into the variable subtract
+
+import subtract from './math_functions.js'
+// Only change code above this line
+
+subtract(7, 4);
+
+
+
 
 
 
