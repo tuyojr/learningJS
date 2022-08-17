@@ -1499,3 +1499,17 @@ let result10 = quoteSample2.match(myRegex1); // Change this line
 
 
 
+// Match Single Characters Not Specified
+
+/*
+Create a single regex that matches all characters that are not a number or a vowel.
+Remember to include the appropriate flags in the regex.
+*/ 
+
+let quoteSample3 = "3 blind mice.";
+let myRegex2 = /[^aeiou0-5]/ig; // Change this line
+let result11 = quoteSample.match(myRegex); // Change this line
+
+
+
+
