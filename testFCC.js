@@ -1396,6 +1396,11 @@ let result2 = waldoRegex.test(waldoIsHiding);
 console.log(result2);
 
 
+// Match a Literal String with Different Possibilities
+
+
+
+
 
 
 
