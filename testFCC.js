@@ -1428,6 +1428,20 @@ let result5 = extractStr.match(codingRegex); // Change this line
 
 
 
+// Finding More Than the First Match
+
+/*
+Using the regex starRegex, find and extract both Twinkle words from the string twinkleStar.
+
+Note
+You can have multiple flags on your regex like /search/gi
+*/
+
+let twinkleStar = "Twinkle, twinkle, little star";
+let starRegex = /Twinkle/gi; // Change this line
+let result6 = twinkleStar.match(starRegex); // Change this line
+
+
 
 
 
