@@ -1416,6 +1416,17 @@ let result4 = fccRegex.test(myString1);
 
 
 
+// Extract Matches
+
+/*
+Apply the .match() method to extract the string coding.
+*/
+
+let extractStr = "Extract the word 'coding' from this string.";
+let codingRegex = /coding/i; // Change this line
+let result5 = extractStr.match(codingRegex); // Change this line
+
+
 
 
 
