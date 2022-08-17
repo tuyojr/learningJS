@@ -1396,9 +1396,11 @@ let result2 = waldoRegex.test(waldoIsHiding);
 console.log(result2);
 
 
-// Match a Literal String with Different Possibilities
+// Matching a Literal String with Different Possibilities
 
-
+let petString = "James has a pet cat.";
+let petRegex = /dog|cat|bird|fish/; // Change this line
+let result3 = petRegex.test(petString);
 
 
 
