@@ -1508,7 +1508,20 @@ Remember to include the appropriate flags in the regex.
 
 let quoteSample3 = "3 blind mice.";
 let myRegex2 = /[^aeiou0-5]/ig; // Change this line
-let result11 = quoteSample.match(myRegex); // Change this line
+let result11 = quoteSample3.match(myRegex2); // Change this line
+
+
+
+// Matching Characters that Occur One or More Times
+
+/*
+You want to find matches when the letter s occurs one or more times in Mississippi. 
+Write a regex that uses the + sign.
+*/
+
+let difficultSpelling = "Mississippi";
+let myRegex3 = /s+/g; // Change this line
+let result12 = difficultSpelling.match(myRegex3);
 
 
 
