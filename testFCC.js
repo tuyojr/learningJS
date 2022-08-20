@@ -1633,6 +1633,19 @@ let result17 = quoteSample.match(alphabetRegexV2).length;
 
 
 
+// Match Everything But Letters and Numbers
+
+/*
+Use the shorthand character class \W to count the number of non-alphanumeric characters 
+in various quotes and strings.
+*/ 
+
+let quoteSample5 = "The five boxing wizards jump quickly.";
+let nonAlphabetRegex = /\W/g; // Change this line
+let result18 = quoteSample.match(nonAlphabetRegex).length;
+
+
+
 
 
 
