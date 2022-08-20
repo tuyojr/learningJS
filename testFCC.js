@@ -1657,6 +1657,17 @@ let numRegex = /\d/g; // Change this line
 let result19 = movieName.match(numRegex).length;
 
 
+// Match All Non-Numbers
+
+/*
+Use the shorthand character class for non-digits \D to count how many non-digits are 
+in movie titles.
+*/
+
+let movieName1 = "2001: A Space Odyssey";
+let noNumRegex = /\D/g; // Change this line
+let result20 = movieName.match(noNumRegex).length;
+
 
 
 
