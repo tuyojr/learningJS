@@ -1786,5 +1786,24 @@ let result27 = favRegex.test(favWord);
 
 
 
+// Positive and Negative Lookahead
+
+/*
+Use lookaheads in the pwRegex to match passwords that are greater than 5 characters long, 
+and have two consecutive digits.
+*/
+
+let sampleWord = "astronaut";
+let pwRegex = /(?=\w{6})(?=\w*\d{2})/; // Change this line
+/*
+The first lookahead checks if the password is greater than 5 characters \w = [A-Za-z0-9]
+The secon lookahead checks if [A-Za-z0-9] has characters that occur zero or more times (*)
+and if these characters has two consecutive digits i.e. \d{2} = [0-9]{2} 2 characters between 0 and 9.
+*/
+let result28 = pwRegex.test(sampleWord);
+
+
+
+
 
 
