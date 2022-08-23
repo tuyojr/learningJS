@@ -1927,3 +1927,14 @@ console.log(typeof three)
 
 
 
+
+// Catch Misspelled Variable and Function Names
+
+/*
+Fix the two spelling errors in the code so the netWorkingCapital calculation works.
+*/
+
+
+
+
+
