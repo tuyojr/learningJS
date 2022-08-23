@@ -1975,4 +1975,26 @@ console.log(innerHtml);
 
 
 
+// Catch Use of Assignment Operator Instead of Equality Operator
+
+/*
+Fix the condition so the program runs the right branch, and the appropriate 
+value is assigned to result.
+*/
+
+let x = 7;
+let y = 9;
+let result33 = "to come";
+
+if (x == y) {
+    result33 = "Equal!";
+} else {
+    result33 = "Not equal!";
+}
+
+console.log(result33);
+
+
+
+
 
