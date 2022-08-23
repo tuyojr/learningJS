@@ -1941,3 +1941,24 @@ console.log(`Net working capital is: ${netWorkingCapital}`);
 
 
 
+
+// Catch Unclosed Parentheses, Brackets, Braces and Quotes
+
+/*
+Fix the two pair errors in the code.
+SyntaxError: unknown: Unexpected token, expected "," (1:22)
+
+> 1 | let myArray = [1, 2, 3;
+    |                       ^
+  2 | let arraySum = myArray.reduce((previous, current =>  previous + current);
+  3 | console.log(`Sum of array values is: ${arraySum}`);
+*/
+
+let myArray5 = [1, 2, 3];
+let arraySum = myArray5.reduce((previous, current) => previous + current);
+console.log(`Sum of array values is: ${arraySum}`);
+
+
+
+
+
