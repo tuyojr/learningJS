@@ -2128,3 +2128,19 @@ let yourArray = ["J.Cole", "Dave", "2pac", 8, true]; // Change this line
 
 
 
+// Accessing an Array's Contents Using Bracket Notation
+
+/*
+In order to complete this challenge, set the 2nd position (index 1) of myArray to anything 
+you want, besides the letter b.
+*/
+
+let myArray6 = ["a", "b", "c", "d"];
+// Only change code below this line
+myArray6[1] = "bee"
+// Only change code above this line
+console.log(myArray6);
+
+
+
+
