@@ -2185,3 +2185,19 @@ console.log(popShift(['challenge', 'is', 'not', 'complete']));
 
 
 
+// Removing Items Using splice()
+
+/*
+We've initialized an array arr. Use splice() to remove elements from arr, so that it only contains 
+elements that sum to the value of 10.
+*/
+
+const arr3 = [2, 4, 5, 1, 7, 5, 2, 1];
+// Only change code below this line
+arr3.splice(1, 4)
+// Only change code above this line
+console.log(arr3);
+
+
+
+
