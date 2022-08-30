@@ -2308,3 +2308,33 @@ console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
 
 
 
+// Iterate Through All of an Array's Items Using For Loops
+
+/*
+We have defined a function, filteredArray, which takes arr, a nested array, 
+and elem as arguments, and returns a new array. elem represents an element 
+that may or may not be present on one or more of the arrays nested within arr. 
+Modify the function, using a for loop, to return a filtered version of the 
+passed array such that any array nested within arr containing elem has been 
+removed.
+filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3) should return []
+*/
+
+function filteredArray(arr8, elem) {
+    let newArr2 = [];
+    // Only change code below this line
+    for (let d = 0; d < arr8.length; d++) {
+        if (arr8[d].indexOf(elem) == -1) {
+            newArr2.push(arr8[d])
+        }
+    }
+    // Only change code above this line
+    return newArr2;
+}
+
+console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
+
+
+
+
+
