@@ -2462,6 +2462,35 @@ console.log(checkInventory1("apples"));
 
 
 
+// Using the delete Keyword to Remove Object Properties
+
+/*
+Use the delete keyword to remove the oranges, plums, and strawberries 
+keys from the foods object.
+*/
+
+let foods2 = {
+    apples2: 25,
+    oranges2: 32,
+    plums2: 28,
+    bananas2: 13,
+    grapes2: 35,
+    strawberries2: 27
+};
+
+// Only change code below this line
+delete foods2.oranges2
+
+delete foods2.plums2
+
+delete foods2.strawberries2
+// Only change code above this line
+
+console.log(foods2);
+
+
+
+
 
 
 
