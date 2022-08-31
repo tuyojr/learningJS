@@ -2406,4 +2406,30 @@ console.log(foods);
 
 
 
+// Modifying an Object Nested Within an Object
+
+/*
+Here we've defined an object userActivity, which includes another 
+object nested within it. Set the value of the online key to 45.
+*/
+
+let userActivity = {
+    id1: 23894201352,
+    date1: 'January 1, 2017',
+    data1: {
+        totalUsers1: 51,
+        online1: 42
+    }
+};
+
+// Only change code below this line
+userActivity.data1.online1 = 45
+// Only change code above this line
+
+console.log(userActivity);
+
+
+
+
+
 
