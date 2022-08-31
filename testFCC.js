@@ -2431,5 +2431,37 @@ console.log(userActivity);
 
 
 
+// Accessing Property Names with Bracket Notation
+
+/*
+We've defined a function, checkInventory, which receives a scanned 
+item as an argument. Return the current value of the scannedItem key 
+in the foods object. You can assume that only valid keys will be 
+provided as an argument to checkInventory.
+*/
+
+let foods1 = {
+    apples1: 25,
+    oranges1: 32,
+    plums1: 28,
+    bananas1: 13,
+    grapes1: 35,
+    strawberries1: 27
+};
+
+function checkInventory1(scannedItem1) {
+    // Only change code below this line
+    let inventory1 = foods1[scannedItem1]
+
+    return inventory1
+    // Only change code above this line
+}
+
+console.log(checkInventory1("apples"));
+
+
+
+
+
 
 
