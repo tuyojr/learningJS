@@ -2535,6 +2535,62 @@ console.log(isEveryoneHere(users1));
 
 
 
+// Iterate Through the Keys of an Object with a for...in Statement
+
+/*
+NOTE: Objects do not maintain an ordering to stored keys like arrays do; thus 
+a key's position on an object, or the relative order in which it appears, is 
+irrelevant when referencing or accessing that key.
+
+We've defined a function countOnline which accepts one argument (a users object). 
+Use a for...in statement within this function to loop through the users object 
+passed into the function and return the number of users whose online property is 
+set to true. An example of a users object which could be passed to countOnline is 
+shown below. Each user will have an online property with either a true or false value.
+{
+  Alan: {
+    online: false
+  },
+  Jeff: {
+    online: true
+  },
+  Sarah: {
+    online: false
+  }
+}
+*/
+
+const users2 = {
+    Alan: {
+        online: false
+    },
+    Jeff: {
+        online: true
+    },
+    Sarah: {
+        online: false
+    }
+}
+
+function countOnline(usersObj) {
+    // Only change code below this line
+    let onlineUser = 0;
+    for (let user in usersObj) {
+        if (usersObj[user].online === true) {
+            onlineUser++;
+        }
+    }
+    return onlineUser;
+    // Only change code above this line
+}
+
+console.log(countOnline(users2));
+
+
+
+
+
+
 
 
 
