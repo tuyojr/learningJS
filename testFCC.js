@@ -2830,22 +2830,24 @@ Fifth Execution: num = 2-1 = 1 → is num 0 or 1? Yep
 /*
 Return the length of the longest word in the provided sentence.
 
-Your response should be a number.
-
-Take the string and convert it into an array of words. 
-
-Declare a variable to keep track of the maximum length and loop 
-from 0 to the length of the array of words.
-
-Then check for the longest word by comparing the current word to the 
-previous one and storing the new longest word. At the end of the loop 
-just return the number value of the variable maxLength.
+Your response should be a number. 
 */
 
 function findLongestWordLength(str) {
+    // Take the string and convert it into an array of words.
     let word = str.split(' ');
+
+    /*
+    Declare a variable to keep track of the maximum length and loop 
+    from 0 to the length of the array of words.
+    */
     let strLength = 0;
 
+    /*
+    Then check for the longest word by comparing the current word to the 
+    previous one and storing the new longest word. At the end of the loop 
+    just return the number value of the variable maxLength.
+    */
     for (let i = 0; i < word.length; i++) {
         if (word[i].length > strLength) {
             strLength = word[i].length;
