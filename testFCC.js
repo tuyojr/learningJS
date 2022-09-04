@@ -2911,6 +2911,49 @@ console.log(largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [10
 
 
 
+// Confirm the Ending of a string
+
+/*
+Check if a string (first argument, str) ends with the given 
+target string (second argument, target).
+
+This challenge can be solved with the .endsWith() method, which was 
+introduced in ES2015. But for the purpose of this challenge, we would 
+like you to use one of the JavaScript substring methods instead.
+*/
+
+function confirmEnding(str, target) {
+    /*
+    We need to make a pattern from the target variable that exists 
+    at the end of the string str.
+
+    Since we will use a variable that will change the pattern each 
+    time the function is called, we will use the constructor of the 
+    regular expression object new RegExp(pattern[, flags]), so we 
+    start with: new RegExp(target).
+
+    Then we have to check at the end of the string, so we concatenate 
+    to the target variable the $ character to match the end: 
+    new RegExp(target+'$').
+
+    We use the flag i to ignore the case of the pattern and we have 
+    our completed RegExp: new RegExp(target+'$','i'), or we can 
+    omit the flag entirely.
+
+    Finally, we are using our regular expression with the test method 
+    to the given string, to check if the string ends with the pattern 
+    and return true or false accordingly.
+    (c)freeCodeCamp
+    */
+    let re = new RegExp(target + "$", "i");
+
+    return re.test(str);
+}
+
+confirmEnding("Bastian", "n");
+
+
+
 
 
 
