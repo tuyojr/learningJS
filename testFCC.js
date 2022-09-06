@@ -2955,6 +2955,32 @@ confirmEnding("Bastian", "n");
 
 
 
+// Repeat a String Repeat a String
+
+/*
+Repeat a given string str (first argument) for num times (second argument). 
+Return an empty string if num is not a positive number. For the purpose of 
+this challenge, do not use the built-in .repeat() method.
+*/
+
+function repeatStringNumTimes(str, num) {
+
+    // create a variable and store the new string
+    let newStr = ""
+
+    // create a loop to count the number of times the string should be repeated and add it to the new str
+    for (let i = 0; i < num; i++) {
+        newStr += str
+    }
+
+    return newStr;
+}
+
+console.log(repeatStringNumTimes("abc", 3));
+
+
+
+
 
 
 
