@@ -2981,6 +2981,36 @@ console.log(repeatStringNumTimes("abc", 3));
 
 
 
+// Truncate a String
+
+/*
+Truncate a string (first argument) if it is longer than the given maximum 
+string length (second argument). Return the truncated string with a ... ending.
+*/
+
+function truncateString(str, num) {
+
+    //create a new string for the truncated string
+    let truncStr = " "
+
+    /*
+    create an if statement to determine if the string length is greater than 
+    the num we want to truncate it, we return a slice of our string starting 
+    at character 0, and ending at num. We then append our '...' to the end 
+    of the string.
+    */
+    if (str.length > num) {
+        return str.slice(0, num) + "..."
+    } else {
+        return str;
+    }
+}
+
+console.log(truncateString("A-tisket a-tasket A green and yellow basket", 8));
+
+
+
+
 
 
 
