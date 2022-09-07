@@ -3059,6 +3059,47 @@ console.log(booWho(null));
 
 
 
+// Title Case a Sentence
+
+/*
+Return the provided string with the first letter of each 
+word capitalized. Make sure the rest of the word is in lower case.
+
+For the purpose of this exercise, you should also capitalize 
+connecting words like the and of.
+*/
+
+function titleCase(str) {
+
+    /*
+    spilt the string by WhiteSpaces and create a variable to track this 
+    updated title
+    */
+    const newTitle = str.split(" ")
+    const updatedTitle = []
+
+    /*
+    use a loop to turn turn the first character of the word to uppercase 
+    and the rest to lowercase by creating concatenated string composed of 
+    the whole word in lowercase with the first character replaced by its 
+    uppercase
+    */
+    for (let strings in newTitle) {
+        updatedTitle[strings] = newTitle[strings][0].toUpperCase() 
+        + newTitle[strings].slice(1).toLowerCase();
+    }
+    /*
+    Array.join() Adds all the elements of an array into a string, 
+    separated by the specified separator string.
+    */
+    return updatedTitle.join(" ")
+}
+
+console.log(titleCase("I'm a little tea pot"));
+
+
+
+
 
 
 
