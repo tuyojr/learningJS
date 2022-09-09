@@ -3149,7 +3149,27 @@ Falsy values in JavaScript are false, null, 0, "", undefined, and NaN.
 Hint: Try converting each value to a Boolean.
 */
 
+function bouncer(arr) {
 
+    // create a new empty array
+    let newArray2 = []
+
+    /*
+    We use a for cycle to iterate over all elements of the provided array (arr)
+    */
+    for (let i = 0; i < arr.length; i++) {
+
+        /*
+        use an if statement to check if the element is "falsy"
+        If the element is not false, we push it to the new array (newArray2). This result in the new array (newArray2) containing only true elements.
+        */
+        if (arr[i]) newArray2.push(arr[i]);
+
+    }
+    return newArray2
+}
+
+console.log(bouncer([7, "ate", "", false, 9]));
 
 
 
