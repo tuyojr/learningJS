@@ -3161,7 +3161,8 @@ function bouncer(arr) {
 
         /*
         use an if statement to check if the element is "falsy"
-        If the element is not false, we push it to the new array (newArray2). This result in the new array (newArray2) containing only true elements.
+        If the element is not false, we push it to the new array (newArray2). 
+        This result in the new array (newArray2) containing only true elements.
         */
         if (arr[i]) newArray2.push(arr[i]);
 
@@ -3170,6 +3171,17 @@ function bouncer(arr) {
 }
 
 console.log(bouncer([7, "ate", "", false, 9]));
+
+/*
+another solution is to use the Array.prototype.filter method which expects 
+a function that returns a Boolean value. It takes a single argument 
+and returns true for a truthy value or false for a falsy value. 
+Hence we pass the built-in Boolean function.
+
+function bouncer(arr) {
+  return arr.filter(Boolean);
+}
+*/
 
 
 
