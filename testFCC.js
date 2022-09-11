@@ -3271,6 +3271,65 @@ console.log(mutation(["hello", "hey"]));
 
 
 
+// Chunky Monkey
+
+/*
+Write a function that splits an array (first argument) into 
+groups the length of size (second argument) and returns them 
+as a two-dimensional array.
+*/
+
+function chunkArrayInGroups(arr, size) {
+    /*
+    let’s start by first creating two new arrays 
+    to store the temporary array and the new 
+    smaller arrays
+    */
+    let tempArr = []
+    let newArrays = []
+
+    /*
+    Next we’ll need a for loop to loop through arr
+    Our for loop loops until i is equal to or more
+    than the length of the array
+    */
+    for (let i = 0; i < arr.length; i++) {
+
+        /*
+        Inside our loop, we push to tempArr using 
+        tempArr.push(arr[i])
+        if the remainder of i / size is not equal to size - 1.
+        */
+        if (i % size !== size - 1) tempArr.push(arr[i]);
+
+        /*
+        Otherwise, we push to tempArr, push tempArr to the
+        newArrays variable and reset tempArr to an empty array.
+        */
+        else {
+            tempArr.push(arr[i]);
+
+            /*
+            Next, if tempArr isn’t an empty array, 
+            we push it to newArrays.
+            */
+            newArrays.push(tempArr);
+            tempArr = [];
+        }
+    }
+    if (tempArr.length !== 0) newArrays.push(tempArr);
+
+    /*
+    Finally, we return the value of newArrays.
+    */
+    return newArrays;
+}
+
+console.log(chunkArrayInGroups(["a", "b", "c", "d"], 2));
+
+
+
+
 
 
 
