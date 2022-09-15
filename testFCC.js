@@ -3330,6 +3330,16 @@ console.log(chunkArrayInGroups(["a", "b", "c", "d"], 2));
 
 
 
+// OBJECT ORIENTED PROGRAMMING
+// Create a Basic JavaScript Object
+
+/*
+Create a dog object with name and numLegs properties, and set 
+them to a string and a number, respectively.
+*/
+
+
+
 
 
 
