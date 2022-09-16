@@ -3353,7 +3353,10 @@ console.log(dog.name)
 Print both properties of the dog object to your console.
 */
 
+let dog1 = {name: "Chappie", numLegs: 4}
 
+console.log("My dog's name is " + dog1.name + ".")
+console.log("Like every other dog, he has " + dog1.numLegs + " legs.")
 
 
 
