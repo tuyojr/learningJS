@@ -3360,6 +3360,17 @@ console.log("Like every other dog, he has " + dog1.numLegs + " legs.")
 
 
 
+// Create a Method on an Object
+
+/*
+Using the dog object, give it a method called sayLegs. 
+The method should return the sentence This dog has 4 legs.
+*/
+
+
+
+
+
 
 
 
