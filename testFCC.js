@@ -3377,6 +3377,21 @@ console.log(dog2.sayLegs());
 
 
 
+// Make Code More Reusable with the `this` Keyword
+
+/*
+let duck = {
+  name: "Aflac",
+  numLegs: 2,
+  sayName: function() {return "The name of this duck is " + this.name + ".";}
+};
+
+Modify the dog.sayLegs method to remove any references to dog. 
+Use the duck example for guidance.
+*/
+
+
+
 
 
 
