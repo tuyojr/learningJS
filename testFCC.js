@@ -3367,8 +3367,13 @@ Using the dog object, give it a method called sayLegs.
 The method should return the sentence This dog has 4 legs.
 */
 
+let dog2 = {
+    name: "Erik",
+    numLegs: 4,
+    sayLegs: function(){ return "This dog has " + dog2.numLegs + " legs." }
+}
 
-
+console.log(dog2.sayLegs());
 
 
 
