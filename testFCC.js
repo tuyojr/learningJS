@@ -3390,6 +3390,14 @@ Modify the dog.sayLegs method to remove any references to dog.
 Use the duck example for guidance.
 */
 
+let dog3 = {
+    name: "Ghost",
+    numLegs: 4,
+    sayLegs: function() {return this.name + " has " + this.numLegs + " legs."}
+}
+
+console.log(dog3.sayLegs());
+
 
 
 
