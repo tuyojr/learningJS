@@ -3464,6 +3464,14 @@ and passing a number of bedrooms. Then, use instanceof to verify
 that it is an instance of House.
 */
 
+function House(numberOfBedrooms){
+    this.numberOfBedrooms = numberOfBedrooms
+}
+
+let myHouse = new House(8)
+
+console.log(myHouse instanceof House)
+
 
 
 
