@@ -3444,6 +3444,16 @@ Pass it two strings as arguments for the name and color
 properties.
 */
 
+function Dog3(name, color){
+    this.name = name
+    this.color = color
+    this.numLegs = 4
+}
+
+let terrier = new Dog3("Basim", "brown")
+
+console.log(terrier)
+
 
 
 
