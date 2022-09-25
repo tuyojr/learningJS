@@ -3478,7 +3478,33 @@ console.log(myHouse instanceof House)
 
 /*
 Add the own properties of canary to the array ownProps.
+let ownProps = [];
+
+for (let property in duck) {
+  if(duck.hasOwnProperty(property)) {
+    ownProps.push(property);
+  }
+}
+
+console.log(ownProps);
 */
+
+function Birds(name, color) {
+    this.name = name
+    this.color = color
+    this.numLegs = 2
+}
+
+let canary = new Birds("Jasper", "yellow")
+let ownProps = []
+
+for (let prop in canary){
+    if(canary.hasOwnProperty(prop)){
+        ownProps.push(prop)
+    }
+}
+
+console.log(ownProps)
 
 
 
