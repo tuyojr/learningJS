@@ -3474,6 +3474,14 @@ console.log(myHouse instanceof House)
 
 
 
+// Understand Own Properties
+
+/*
+Add the own properties of canary to the array ownProps.
+*/
+
+
+
 
 
 
