@@ -3515,6 +3515,15 @@ console.log(ownProps)
 Add a numLegs property to the prototype of Dog
 */
 
+function Dog4(name) {
+    this.name = name
+}
+
+Dog4.prototype.numLegs = 4
+
+let shepherd = new Dog4("Kratos")
+
+console.log(shepherd)
 
 
 
