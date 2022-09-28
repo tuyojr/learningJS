@@ -3568,6 +3568,17 @@ parameter and, using the constructor property, return true
 if the candidate is a Dog, otherwise return false.
 */
 
+function Dog6(name){
+    this.name = name
+}
+
+function joinDogFraternity(candidate){
+    if (candidate.constructor === Dog6){
+        return true
+    } else {
+        return false
+    }
+}
 
 
 
