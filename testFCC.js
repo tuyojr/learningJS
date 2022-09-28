@@ -3536,6 +3536,28 @@ Add all of the prototype properties of Dog to the array
 prototypeProps.
 */
 
+function Dog5(name) {
+    this.name = name
+}
+
+Dog5.prototype.numLegs = 4
+
+let beagle = new Dog5("Snoopy")
+
+let ownProps2 = []
+let prototypeProps = []
+
+for (let property in beagle) {
+    if(beagle.hasOwnProperty(property)){
+        ownProps2.push(property)
+    } else {
+        prototypeProps.push(property)
+    }
+}
+
+console.log(ownProps2)
+console.log(prototypeProps)
+
 
 
 
