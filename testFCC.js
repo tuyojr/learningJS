@@ -3509,6 +3509,14 @@ console.log(ownProps)
 
 
 
+// Use Prototype Properties to Reduce Duplicate Code
+
+/*
+Add a numLegs property to the prototype of Dog
+*/
+
+
+
 
 
 
