@@ -3612,6 +3612,21 @@ Dog7.prototype = {
 Define the constructor property on the Dog prototype. 
 */
 
+function Dog8(name) {
+    this.name = name
+}
+
+Dog8.prototype = {
+    constructor: Dog8,
+    numLegs: 4,
+    eat: function () {
+        console.log("nom nom nom")
+    },
+    describe: function () {
+        console.log("My name is " + this.name)
+    }
+}
+
 
 
 
