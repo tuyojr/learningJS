@@ -3635,6 +3635,14 @@ Dog8.prototype = {
 Use isPrototypeOf to check the prototype of beagle.
 */
 
+function Dog9(name) {
+    this.name = name
+}
+
+let beagle2 = new Dog9("Chappie")
+
+console.log(Dog9.prototype.isPrototypeOf(beagle2))
+
 
 
 
