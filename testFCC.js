@@ -3629,5 +3629,13 @@ Dog8.prototype = {
 
 
 
+// Understand Where an Object’s Prototype Comes From
+
+/*
+Use isPrototypeOf to check the prototype of beagle.
+*/
+
+
+
 
 
