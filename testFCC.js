@@ -3606,5 +3606,13 @@ Dog7.prototype = {
 
 
 
+// Remember to Set the Constructor Property when Changing the Prototype
+
+/*
+Define the constructor property on the Dog prototype. 
+*/
+
+
+
 
 
