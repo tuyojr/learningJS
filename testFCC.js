@@ -3651,6 +3651,14 @@ console.log(Dog9.prototype.isPrototypeOf(beagle2))
 Modify the code to show the correct prototype chain.
 */
 
+function Dog10(name) {
+    this.name = name
+}
+
+let beagle3 = new Dog10("Charlie")
+
+console.log(Object.prototype.isPrototypeOf(Dog.prototype))
+
 
 
 
