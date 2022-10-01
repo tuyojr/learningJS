@@ -3645,5 +3645,13 @@ console.log(Dog9.prototype.isPrototypeOf(beagle2))
 
 
 
+// Understand the Prototype Chain
+
+/*
+Modify the code to show the correct prototype chain.
+*/
+
+
+
 
 
