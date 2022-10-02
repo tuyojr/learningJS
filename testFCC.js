@@ -3724,5 +3724,14 @@ Animal.prototype = {
 
 
 
+// Inherit Behaviors from a Supertype
+
+/*
+Use Object.create to make two instances of 
+Animal named duck and beagle.
+*/
+
+
+
 
 
