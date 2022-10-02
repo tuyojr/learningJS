@@ -3773,6 +3773,18 @@ function Dog() { }
 let beagle = new Dog();
 */
 
+function Animal2() { }
+
+Animal2.prototype = {
+    constructor: Animal2,
+    eat: function () { console.log("nom nom nom") }
+}
+
+function Dog11(name) { this.name = name }
+
+Dog11.prototype = Object.create(Animal2.prototype)
+
+let Dog11 = new Dog11("Harry")
 
 
 
