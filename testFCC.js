@@ -3731,6 +3731,24 @@ Use Object.create to make two instances of
 Animal named duck and beagle.
 */
 
+function Animal1() { }
+
+Animal1.prototype = {
+    constructor: Animal1,
+    eat: function(){ console.log("nom nom nom") }
+}
+
+function duck(name){
+    this.name = name
+}
+
+function beagle4(name){
+    this.name = name
+}
+
+let duck = Object.create(Animal1.prototype)
+let beagle4 = Object.create(Animal1.prototype)
+
 
 
 
