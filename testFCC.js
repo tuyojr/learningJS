@@ -3808,6 +3808,29 @@ Fix the code so duck.constructor and beagle.constructor
 return their respective constructors.
 */
 
+function Animal3() { }
+
+Animal3.prototype = { 
+    constructor: Animal3, 
+    eat: function() {
+        console.log("nom nom nom")
+    }
+}
+
+function Bird4(name){ this.name = name }
+function Dog12(name) { this.name = name }
+
+Bird4.prototype = Object.create(Animal3.prototype)
+Dog12.prototype = Object.create(Animal3.prototype)
+
+Bird4.prototype.constructor = Bird4
+Dog12.prototype.constructor = Dog12
+
+let duck1 = new Bird4("geese")
+let beagle5 = new Dog12("Sharon")
+
+console.log(duck1.constructor, beagle5.constructor)
+
 
 
 
