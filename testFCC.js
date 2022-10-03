@@ -3788,4 +3788,26 @@ let Dog11 = new Dog11("Harry")
 
 
 
+// Reset an Inherited Constructor Property
+
+/*
+function Animal() { }
+function Bird() { }
+function Dog() { }
+
+Bird.prototype = Object.create(Animal.prototype);
+Dog.prototype = Object.create(Animal.prototype);
+
+// Only change code below this line
+
+
+
+let duck = new Bird();
+let beagle = new Dog();
+Fix the code so duck.constructor and beagle.constructor 
+return their respective constructors.
+*/
+
+
+
 
