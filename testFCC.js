@@ -3888,4 +3888,14 @@ console.log(penguin.fly())
 
 
 
+// Use a Mixin to Add Common Behavior Between Unrelated Objects
+
+/*
+Create a mixin named glideMixin that defines a method glide.
+Then use the glideMixin to give both bird and boat the
+ability to glide
+*/
+
+
+
 
