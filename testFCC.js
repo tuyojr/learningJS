@@ -3869,6 +3869,23 @@ Override the fly() method for Penguin so that it returns
 the string Alas, this is a flightless bird.
 */
 
+function Bird5 () {  }
+
+Bird5.prototype.fly = function () { return "I'm flying!" }
+
+function Penguin(name) { this.name = name }
+
+Penguin.prototype = Object.create(Bird5)
+Penguin.prototype.constructor = Penguin
+
+Penguin.prototype.fly = function () {
+    return "Alas, this is a flightless bird."
+}
+
+let penguin = new Penguin("Hoe G")
+
+console.log(penguin.fly())
+
 
 
 
