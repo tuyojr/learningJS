@@ -3843,6 +3843,23 @@ can both eat() and bark(). The bark() method should print
 Woof! to the console.
 */
 
+function Animal4 () { }
+
+Animal4.prototype = {
+    constructor: Animal4,
+    eat: function () { console.log("nom nom nom") }
+}
+
+function Dog13(name) { this.name = name }
+
+Dog13.prototype = Object.create(Animal4.prototype)
+
+Dog13.prototype.constructor = Dog13
+
+Dog13.prototype.bark = function () { console.log("Woof!") }
+
+let beagle6 = new Dog13("Grace")
+
 
 
 
