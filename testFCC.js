@@ -3862,4 +3862,13 @@ let beagle6 = new Dog13("Grace")
 
 
 
+// Override Inherited Methods
+
+/*
+Override the fly() method for Penguin so that it returns
+the string Alas, this is a flightless bird.
+*/
+
+
+
 
