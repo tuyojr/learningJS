@@ -3927,5 +3927,14 @@ a private variable. Then, create a method getWeight that
 returns the value of weight 15.
 */
 
+function Bird6() {
+    let weight = 15
+    
+    this.getWeight = function() { return weight + "Kg"}
+}
+
+let duckie = new Bird6()
+console.log(duckie.getWeight())
+
 
 
