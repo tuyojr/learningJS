@@ -4027,6 +4027,22 @@ get 40 cups of tea for the team, and store them in the
 tea4TeamFCC variable.
 */
 
+const prepareTea = () => 'greenTea'
+
+const getTea = (numOfCups) => {
+    const teaCups = []
+
+    for (let cups = 1; cups <= numOfCups; cups+=1){
+        const teaCup = prepareTea()
+        teaCups.push(teaCup)
+    }
+    return teaCups
+}
+
+const tea4TeamFCC = getTea(40)
+
+console.log(tea4TeamFCC) // prints 'greenTea' 40 times
+
 
 
 
