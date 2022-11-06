@@ -4090,6 +4090,36 @@ as the last argument. We'll discuss this more in later
 lessons.
 */
 
+// Function that returns a string representing a cup of green tea
+const prepareGreenTea = () => 'greenTea';
+
+// Function that returns a string representing a cup of black tea
+const prepareBlackTea = () => 'blackTea';
+
+/*
+Given a function (representing the tea type) and number of cups needed, the
+following function returns an array of strings (each representing a cup of
+a specific type of tea).
+*/
+const getTea1 = (prepareTea1, numOfCups) => {
+    const teaCups1 = [];
+
+    for (let cups = 1; cups <= numOfCups; cups += 1) {
+        const teaCup1 = prepareTea1();
+        teaCups1.push(teaCup1);
+    }
+    return teaCups;
+};
+
+// Only change code below this line
+const tea4GreenTeamFCC = getTea1(prepareBlackTea, 27);
+const tea4BlackTeamFCC = getTea1(prepareGreenTea, 13);
+// Only change code above this line
+
+console.log(
+    tea4GreenTeamFCC,
+    tea4BlackTeamFCC
+);
 
 
 
