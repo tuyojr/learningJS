@@ -4112,8 +4112,8 @@ const getTea1 = (prepareTea1, numOfCups) => {
 };
 
 // Only change code below this line
-const tea4GreenTeamFCC = getTea1(prepareBlackTea, 27);
-const tea4BlackTeamFCC = getTea1(prepareGreenTea, 13);
+const tea4GreenTeamFCC = getTea1(prepareGreenTea, 27);
+const tea4BlackTeamFCC = getTea1(prepareBlackTea, 13);
 // Only change code above this line
 
 console.log(
