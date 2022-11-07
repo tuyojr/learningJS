@@ -4245,3 +4245,13 @@ function incrementer() {
 }
 */
 
+let fixedValue = 4
+
+function incrementer() {
+    let newValue = fixedValue + 1
+    return newValue
+}
+
+console.log(incrementer()) // prints 5
+console.log(fixedValue) // prints 4
+
