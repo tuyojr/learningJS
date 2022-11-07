@@ -4338,7 +4338,50 @@ Note: Both functions should return an array, and any new parameters
 should be added before the bookName parameter.
 */
 
+// The global variable
+const bookList = ["The Hound of the Baskervilles", "On The Electrodynamics of Moving Bodies", 
+                    "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae"];
 
+// Change code below this line
+function add(arr, bookName) {
+
+    // Copy the global array of books into a new variable
+    let newBooks = [...arr]
+
+    // Push the new books into the variable
+    newBooks.push(bookName)
+
+    // Return the new books
+    return newBooks
+
+    // Change code above this line
+}
+
+// Change code below this line
+function remove(arr, bookName) {
+
+    // Copy the global array of books into a new variable
+    let newBooks = [...arr]
+
+    // Check if the bookName is in the newBooks array
+    if (newBooks.indexOf(bookName) >= 0) {
+
+        // Remove the book from the available list of newBooks
+        newBooks.splice(newBooks.indexOf(bookName), 1)
+
+        // Return the new books
+        return newBooks
+
+        // Change code above this line
+    }
+}
+
+var newBooks1 = add(bookList, 'Mr. Sherlock Holmes')
+var newBooks2 = remove(newBooks1, 'Mr. Sherlock Holmes')
+
+console.log(bookList);
+console.log(newBooks1)
+console.log(newBooks2)
 
 
 
