@@ -4288,4 +4288,14 @@ function incrementer1(num){
 console.log(incrementer1()) // prints 5
 console.log(fixedValue1) // prints 4
 
+// a better way to do this is
+
+let fixedValue2 = 4
+
+function incrementer2(num) {
+    return num + 1
+}
+
+console.log(incrementer2(fixedValue2)) // prints 5
+console.log(fixedValue1) // prints 4
 
