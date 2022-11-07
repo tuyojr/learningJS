@@ -4277,5 +4277,15 @@ a result after increasing the value by one.
 */
 
 
+let fixedValue1 = 4
+
+function incrementer1(num){
+    num = 1
+    let value = num + fixedValue1
+    return value
+}
+
+console.log(incrementer1()) // prints 5
+console.log(fixedValue1) // prints 4
 
 
