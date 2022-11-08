@@ -5001,6 +5001,34 @@ the myFilter method using this.
 
 */
 
+// The global variable
+const s2 = [23, 65, 98, 5];
+
+Array.prototype.myFilter = function (callback1) {
+    // Only change code below this line
+    const newArray5 = [];
+
+    // first lets use a for loop to iterate over the values in the array
+    for (let i = 0; i < s2.length; i++) {
+
+        /*
+        check if the callback condition is true and push into the new array
+        */
+        if (callback1(s2[i]) === true) {
+            newArray5.push(s1[i]);
+        }
+    }
+
+    // Only change code above this line
+    return newArray5;
+};
+
+const new_s2 = s2.myFilter(function (item2) {
+    return item2 % 2 === 1;
+});
+
+console.log(new_s2)
+
 
 
 
