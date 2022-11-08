@@ -5080,8 +5080,13 @@ new array with only the first three items.
 Do not mutate the original array provided to the function.
 */
 
+function nonMutatingSplice(cities){
+    return cities.slice(0, 3);
+}
 
+const inputCities = ["Chicago", "Delhi", "Islamabad", "London", "Berlin"];
 
+console.log(nonMutatingSplice(inputCities));
 
 
 
