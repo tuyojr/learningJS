@@ -4681,6 +4681,31 @@ built-in map method. The Array instance can be accessed in
 the myMap method using this.
 */
 
+// The global variable
+const s1 = [23, 65, 98, 5];
+
+Array.prototype.myMap = function (callback) {
+    const newArray3 = [];
+    // Only change code below this line
+
+    // first lets use a for loop to iterate over the values in the array
+    for(let i = 0; i < s.length; i++){
+
+        // Next apply the callback function to the array's items and push the new items into a new variable
+        newArray3.push(callback(s[i]));
+    }
+
+    // Only change code above this line
+    return newArray3;
+};
+
+const new_s1 = s1.myMap(function (item) {
+    return item * 2;
+});
+
+console.log(new_s1)
+
+
 
 
 
