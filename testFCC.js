@@ -5136,8 +5136,15 @@ nonMutatingPush(first, second);
 Change the nonMutatingPush function so it uses concat to merge newItem 
 to the end of original without mutating original or newItem arrays. 
 The function should return an array.
-
 */
+
+function nonMutatingPush(original, newItem) {
+    return original.concat(newItem);
+}
+
+const first1 = [1, 2, 3];
+const second2 = [4, 5];
+console.log(nonMutatingPush(first1, second2));
 
 
 
