@@ -5050,6 +5050,14 @@ part of the anim array given the provided beginSlice and
 endSlice indices. The function should return an array.
 */
 
+function sliceArr(anim, beginSlice, endSlice){
+    return anim.slice(beginSlice, endSlice);
+}
+
+const inputAnim = ["Cat", "Dog", "Tiger", "Zebra", "Ant"];
+
+console.log(sliceArr(inputAnim, 1, 3));
+
 
 
 
