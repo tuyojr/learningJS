@@ -5579,6 +5579,14 @@ Use the some method inside the checkPositive function to check if any element
 in arr is positive. The function should return a Boolean value.
 */
 
+function checkPositive(arr) {
+    // Check if any element in the array is greater than 0 i.e positive
+
+    return arr.some(arr => arr > 0)
+}
+
+console.log(checkPositive([1, 2, 3, -4, 5]));
+
 
 
 
