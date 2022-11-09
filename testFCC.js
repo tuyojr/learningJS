@@ -5455,6 +5455,13 @@ Note that the words are not always separated by spaces, and the
 array should not contain punctuation.
 */
 
+function splitify(str) {
+    
+    // In regexp, \W matches non word character [^A-Za-z0-9]
+    return str.split(/\W/)
+}
+
+console.log(splitify("Hello World,I-am code"));
 
 
 
