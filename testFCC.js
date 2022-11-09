@@ -5484,6 +5484,14 @@ return a string. For example, I-like-Star-Wars would be converted to
 I like Star Wars. For this challenge, do not use the replace method.
 */
 
+function sentensify(str) {
+    // First, we want to remove the '-' character, then use ' ' to join the new sentence.
+
+    return str.split(/\W/).join(' ')
+}
+
+console.log(sentensify("May-the-force-be-with-you"));
+
 
 
 
