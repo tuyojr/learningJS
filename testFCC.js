@@ -5636,6 +5636,33 @@ For example, sumAll([4,1]) should return 10 because sum of all
 the numbers between 1 and 4 (both inclusive) is 10.
 */
 
+function sumAll(arr) {
+
+    // This will hold all numbers in the array from the 0th to the ith index 
+    let arrRange = [];
+
+    // This will hold the sum of all the numbers in the arrRange
+    let sum = 0;
+
+    // Function required to sum up all the contents of the arrRange. We will use the reduce() method to call it.
+    const reduceFunc = function (a, b) {
+
+        // Return the sum of the values passed in to the function
+        return a + b;
+    }
+
+    // Takes all the values in our array and pushes them into our arrRange
+    for (let i = arr[0]; i <= arr[1]; i++) {
+        arrRange.push(i);
+    }
+
+    // We use the reduce method to sum up all the values in our arrRange and we return the value of the sum.
+    sum = arrRange.reduce(reduceFunc);
+    return sum;
+}
+
+console.log(sumAll([1, 4]));
+
 
 
 
