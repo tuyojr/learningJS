@@ -5590,6 +5590,25 @@ console.log(checkPositive([1, 2, 3, -4, 5]));
 
 
 
+// Introduction to Currying and Partial Application
+
+/*
+function add(x) {
+  // Only change code below this line
+
+
+  // Only change code above this line
+}
+
+add(10)(20)(30);
+
+Fill in the body of the add function so it uses currying to add parameters 
+x, y, and z.
+*/
+
+
+
+
 
 
 
