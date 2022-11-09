@@ -5321,6 +5321,29 @@ Note: Your function should not use any kind of for or while loops or the
 forEach() function.
 */
 
+const squareList = arr => {
+    // Only change code below this line
+
+    /*
+    First, we want to filter the array so there are no negative numbers and 
+    there are no decimal numbers. We can do this using the .filter() method 
+    and calling the Math.floor() method in it to check for this.
+    Secondly, we want to find the squared value of the content of the new 
+    array, to do this we use the .map() method to  multiply the values at 
+    each index by itself.
+    */
+    return arr = arr
+
+        .filter(num => num > -1 && num === Math.floor(num))
+
+        .map(num => num * num)
+
+    // Only change code above this line
+};
+
+const squaredIntegers = squareList([-3, 4.8, 5, 3, -3.2]);
+console.log(squaredIntegers);
+
 
 
 
