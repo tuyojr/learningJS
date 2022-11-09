@@ -5550,6 +5550,16 @@ Use the every method inside the checkPositive function to check if every element
 in arr is positive. The function should return a Boolean value.
 */
 
+function checkPositive(arr) {
+    // Check if every element is greater than 0 i.e positive
+
+    return arr.every(function (arr) {
+        return arr > 0
+    })
+}
+
+console.log(checkPositive([1, 2, 3, -4, 5]));  // false
+
 
 
 
