@@ -5518,6 +5518,19 @@ The output should be all lower-cased letters
 The output should not have any spaces
 */
 
+function urlSlug(title) {
+
+    /*
+    first, we want to the .split to get an array of words, and use the .filter
+    to remove any empty space, and then finally join the filtered words using
+    the .join method.
+    */
+    return title.split(" ").filter(str => str !== "").join('-').toLowerCase()
+
+}
+
+console.log(urlSlug("A Mind Needs Books Like A Sword Needs A Whetstone"));
+
 
 
 
