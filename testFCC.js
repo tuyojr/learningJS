@@ -5650,6 +5650,7 @@ function sumAll(arr) {
         // Return the sum of the values passed in to the function
         return a + b;
     }
+    // Lets sort our array from smallest to largest, so that the order in which values are passed is rearranged
     arr.sort(function (a, b) {
         return a - b
     });
