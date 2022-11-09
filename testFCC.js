@@ -5650,6 +5650,9 @@ function sumAll(arr) {
         // Return the sum of the values passed in to the function
         return a + b;
     }
+    arr.sort(function (a, b) {
+        return a - b
+    });
 
     // Takes all the values in our array and pushes them into our arrRange
     for (let i = arr[0]; i <= arr[1]; i++) {
