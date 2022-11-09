@@ -5382,11 +5382,11 @@ function alphabeticalOrder(arr) {
 
     /*
     A COMPARE FUNCTION to check:
-    If a is strictly equal to b, return 0.(a === b ? 0)
-    If a is greater than b, return 1 (a  >  b ? 1)
+    If a strictly equal to b is 0.(a === b ? 0), then
+    a greater than b is 1 (a  >  b ? 1) is true,
     else, return -1
      */
-    
+
     return arr.sort(function (a, b) {
         return a === b ? 0 : a > b ? 1 : -1
     })
