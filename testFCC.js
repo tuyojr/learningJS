@@ -5686,6 +5686,32 @@ words, return the symmetric difference of the two arrays.
 Note: You can return the array with its elements in any order.
 */
 
+function diffArray(arr1, arr2) {
+
+    const newArr = [];
+    function callback(arr1, arr2) {
+        // Loop through the arr1 to find elements that are not in arr2
+        for (let i = 0; i < arr1.length; i++) {
+
+            // Check if the value in arr1 at index i is not present in arr2
+            if (arr2.indexOf(arr1[i]) === -1) {
+
+                // Push only the elements unique to one of the arrays 
+                newArr.push(arr1[i]);
+            }
+        }
+    }
+    // Use the callback function to compare if the elements in arr1 are not in arr2 and push them into the newArr
+    callback(arr1, arr2)
+
+    // Use the callback function to compare if the elements in arr2 are not in arr1 and push them into the newArr
+    callback(arr2, arr1);
+
+    return newArr;
+}
+
+console.log(diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]));
+
 
 
 
