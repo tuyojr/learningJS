@@ -5731,6 +5731,17 @@ You will be provided with an initial array (the first argument in
 Note: You have to use the arguments object.
 */
 
+function destroyer(arr, ...destroyed) {
+    /*
+    First, we used the ...spread operator to get the remaining arguments passed
+    Secondly, we returned the values of the arr using the .filter method 
+    to make sure the destroyed values are not returned with the arr
+    */
+    return arr.filter(value => !destroyed.includes(value));
+}
+
+console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3));
+
 
 
 
