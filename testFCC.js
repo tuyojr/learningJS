@@ -5771,6 +5771,39 @@ whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: 
 { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
 */
 
+function whatIsInAName(collection, source) {
+    // const arr = [];
+    // Only change code below this line
+
+    // First lets create an array that stores the key requested in the source argument
+    const reqKey = Object.keys(source)
+
+    /* Next, we want to filter the content of the initial collection, 
+    using a for loop to check each item if the reqKey is present in the 
+    collection and then check if the object in the collection doesn't 
+    have the key and the property value doesn't match the value in source. 
+    return the collection, if available.
+    */
+    return collection.filter(requested => {
+        for (let i = 0; i < reqKey.length; i++) {
+            if (!requested.hasOwnProperty(reqKey[i]) || 
+                requested[reqKey[i]] !== source[reqKey[i]]) {
+                return false
+            }
+        }
+        return true
+    })
+
+    // Only change code above this line
+    // return arr;
+
+}
+
+console.log(whatIsInAName([{ first: "Romeo", last: "Montague" }, 
+{ first: "Mercutio", last: null }, 
+{ first: "Tybalt", last: "Capulet" }], 
+{ last: "Capulet" }));
+
 
 
 
