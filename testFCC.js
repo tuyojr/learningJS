@@ -5819,6 +5819,19 @@ spinalCase('This Is Spinal Tap');
 Convert a string to spinal case. Spinal case is all-lowercase-words-joined-by-dashes.
 */
 
+function spinalCase(str) {
+
+    /*
+    First use the a global regexp in .replace() method to put a space before any 
+    uppercase letters, next is to remove all white-spaces and underscores using the 
+    .split() method, and then replace the white-spaces with dashes, lastly convert 
+    the whole string to lowercase using the .toLowerCase() method
+    */
+    return str.replace(/([a-z])([A-Z])/g, '$1 $2').split(/[\s,’_’]/g).join('-').toLowerCase();
+}
+
+console.log(spinalCase('This Is Spinal Tap'));
+
 
 
 
