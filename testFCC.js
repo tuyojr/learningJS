@@ -5854,6 +5854,32 @@ Translate the provided string to Pig Latin. Input strings are guaranteed to
 be English words in all lowercase.
 */
 
+function translatePigLatin(str){
+
+    // Create an empty string to hold the new pigLatin word and a regular 
+    // expression variable that checks for vowels globally either lower or 
+    // uppercase
+    let pigLatin = "";
+    let regExp = /[aeiou]/gi;
+
+    // Let's use an if statement and .match method to check if the first 
+    // index of the str matches the regExp, and append way to it's end if it 
+    // is a vowel. In an else if statement, check if the string does not have 
+    // any vowels as those in the regExp (using a .match method), and an else 
+    // statement to check the consonants before the vowel using an .indexOf 
+    // method nested with a .match method. Lastly, take the str from the first 
+    // index to the last index and add the consonants with the required end. 
+    if (str[0].match(regExp)) {
+        return pigLatin = str + "way";
+    } else if (str.match(regExp) === null) {
+        pigLatin = str + "ay";
+    } else {
+        let numOfVowels = str.indexOf(str.match(regExp)[0]);
+        pigLatin = str.substr(numOfVowels) + str.substr(0, numOfVowels) + "ay";
+    }
+    return pigLatin;
+}
+
 
 
 
