@@ -5906,6 +5906,23 @@ are replacing it. For example if you mean to replace the word Book with the
 word dog, it should be replaced as Dog
 */
 
+function myReplace(str, before, after) {
+    // Find position where the before string can be found
+    let pos = str.indexOf(before);
+
+    // Check to see if the first letter is uppercase, if it is change the after 
+    // string to capitalized string, else change it to an uncapitalized string
+    if (str[pos] === str[pos].toUpperCase()) {
+        after = after.charAt(0).toUpperCase() + after.slice(1);
+    } else {
+        after = after.charAt(0).toLowerCase() + after.slice(1);
+
+    }
+    return str.replace(before, after);
+}
+
+console.log(myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped"));
+
 
 
 
