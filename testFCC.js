@@ -6416,7 +6416,10 @@ console.log(steamrollArray(
         [3,
             [[4]]
         ]
-    ]));
+    ])
+);
+
+
 
 
 
