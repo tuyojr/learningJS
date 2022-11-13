@@ -6362,6 +6362,20 @@ Then return the rest of the array once the condition is
 satisfied, otherwise, arr should be returned as an empty array.
 */
 
+function dropElements(arr, func) {
+
+    /*
+    We use a while loop with .shift() method to check the first element of 
+    the array until the function returns true.
+    */
+    while (arr.length > 0 && !func(arr[0])) {
+        arr.shift();
+    }
+    return arr;
+}
+
+console.log(dropElements([1, 2, 3], function (n) { return n < 3; }));
+
 
 
 
