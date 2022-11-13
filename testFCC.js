@@ -6578,6 +6578,46 @@ it has to be a string. These methods must be the only available
 means of interacting with the object.
 */
 
+const Person = function (firstAndLast) {
+    // Only change code below this line
+    // Complete the method below and implement the others similarly
+
+    // Create a variable to hold the fullName
+    let fullName = firstAndLast
+
+    // use the this method to create the first name. The .split method will help separate it from the second string
+    this.getFirstName = function () {
+        return fullName.split(" ")[0];
+    };
+
+    // use the this method to create the last name. The .split method will help separate it from the first string
+    this.getLastName = function () {
+        return fullName.split(" ")[1];
+    };
+
+    // return the value of the fullName for the getFullName method
+    this.getFullName = function () {
+        return fullName;
+    };
+
+    // to set the first name, we accept an argument and separate it from the second string
+    this.setFirstName = function (first) {
+        fullName = first + " " + fullName.split(" ")[1];
+    };
+
+    // to set the last name, we accept an argument and separate it from the first string
+    this.setLastName = function (last) {
+        fullName = fullName.split(" ")[0] + " " + last;
+    };
+
+    // to set the full name, we accept an argument that takes in the first and last name and sets it to the variable fullName
+    this.setFullName = function (firstAndLastName) {
+        fullName = firstAndLastName;
+    };
+};
+
+const bob = new Person('Bob Ross');
+console.log(bob.getFullName());
 
 
 
