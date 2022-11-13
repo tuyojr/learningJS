@@ -17,3 +17,28 @@ RaceCar, and race CAR among others.
 We'll also pass strings with special symbols, such as 2A3*3a2, 
 2A3 3a2, and 2_A3*3#A2.
 */ 
+
+function palindrome(str) {
+
+    // Use a regExp to exclude unwanted characters
+    let regExp = /[\W_]/g;
+
+    // create a variable to hold the value of the str argument in 
+    // lower case and using the .replace method, replace the regExp 
+    // in that variable with no space (eliminates unwanted characters)
+    let strLowerCase = str.toLowerCase().replace(regExp, '');
+
+    // next, we want to check if the reversed version of the str is 
+    // the same as the str itself, to do that, we split the strLowerCase 
+    // into an array of characters and then use the .reverse method to 
+    // reverse the arrangement of the characters and join them with the 
+    // .join method.
+    let strReversed = strLowerCase.split('').reverse().join('');
+
+    // Lastly, we want to return the value of the strReversed and the 
+    // strLowerCase strictly equal to each other, to confirm our palindrome. 
+    // It will return true or false
+    return strReversed === strLowerCase;
+}
+
+console.log(palindrome("eye"));
