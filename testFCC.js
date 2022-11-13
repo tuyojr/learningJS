@@ -6008,6 +6008,38 @@ Find the missing letter in the passed letter range and return it.
 If all letters are present in the range, return undefined.
 */
 
+function fearNotLetter(str) {
+
+    /*
+    Create a variable to hold the character code of the first letter 
+    of the str passed into the function, and a variable to store the 
+    missingLetter which we don't know yet.
+    */
+    let firstLetter = str.charCodeAt(0);
+    let missingLetter = undefined;
+
+    /*
+    Use the .split("") method to turn the str to an array and use the 
+    forEach loop to check each letter if letter is the same as the 
+    firstLetter then increment the index of the firstLetter and then 
+    compare again, else we return the letter to the missingLetter 
+    variable and then return the missingLetter. If there are no missing 
+    letters, we return the undefined value for the missingLetter variable 
+    declared earlier.
+    */
+    str.split("").forEach(letter => {
+        if (letter.charCodeAt(0) === firstLetter) {
+            firstLetter++;
+        } else {
+            missingLetter = String.fromCharCode(firstLetter);
+        }
+    });
+
+    return missingLetter;
+}
+
+console.log(fearNotLetter("abce"));
+
 
 
 
