@@ -5953,7 +5953,7 @@ function pairElement(str) {
     /*
     First, we want to create a variable that holds the matched nucleobase 
     pairs. In DNA, A binds with T, and G binds with C.
-    Let the variable take as a value, a function with two parameters, one 
+    Let the variable take a function as it's, a function with two parameters, one 
     for the single basePair, and another that returns the paired bases as an array.
     Use a switch case to check for all the possible combinations.
     */
