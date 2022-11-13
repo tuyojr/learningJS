@@ -6390,6 +6390,34 @@ steamrollArray([1, [2], [3, [[4]]]]);
 Flatten a nested array. You must account for varying levels of nesting.
 */
 
+function steamrollArray(arr) {
+    // New variable for the collapsed array
+    let collapsed = [];
+
+    // Next, loop over the arr to check it's content
+    for (let i = 0; i < arr.length; i++) {
+        // If the element in the arr is an array, use the .push() method 
+        // and the rest operator to call the steamrollArray function with 
+        // the element in the arr argument to add the content to the new 
+        // variable for the collapsed array else, we want to just push the
+        // elements that are not arrays and return the collapsed array
+        if (Array.isArray(arr[i])) {
+            collapsed.push(...steamrollArray(arr[i]))
+        } else {
+            collapsed.push(arr[i])
+        }
+    }
+    return collapsed;
+}
+
+console.log(steamrollArray(
+    [1,
+        [2],
+        [3,
+            [[4]]
+        ]
+    ]));
+
 
 
 
