@@ -6107,6 +6107,52 @@ Convert the characters &, <, >, " (double quote), and ' (apostrophe),
 in a string to their corresponding HTML entities.
 */
 
+function convertHTML(str) {
+
+    // var charHTML = str.split("");
+
+    // for(var i = 0; i < charHTML.length; i++){
+    //   switch (charHTML[i]) {
+    //     case "&":
+    //      charHTML[i] = "&amp;";
+    //      break;
+    //     case "<":
+    //      charHTML[i] = "&lt";
+    //      break;
+    //     case ">":
+    //      charHTML[i] = "&gt";
+    //      break;
+    //     case '"':
+    //      charHTML[i] =  "&quot;";
+    //      break;
+    //     case "'":
+    //      charHTML[i] =  "&apos;";
+    //      break;
+    //    }
+    // }
+    // return charHTML = charHTML.join('')
+
+    // Create an object to assign all the required all the HTML characters
+    let charHTML = {
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&apos;"
+    }
+
+    // use the .replace method to change each character to HTML characters
+    str = str.replace(/&/g, charHTML["&"]);
+    str = str.replace(/</g, charHTML["<"]);
+    str = str.replace(/>/g, charHTML[">"]);
+    str = str.replace(/"/g, charHTML["\""]);
+    str = str.replace(/'/g, charHTML["'"]);
+
+    return str;
+}
+
+console.log(convertHTML("Dolce & Gabbana"));
+
 
 
 
