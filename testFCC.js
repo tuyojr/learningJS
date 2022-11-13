@@ -6481,6 +6481,30 @@ Remember, you can access object properties through either dot
 notation or [] notation.
 */
 
+function truthCheck(collection, pre) {
+    // FCC Solution
+    // Create a counter to check how many are true.
+    let counter = 0;
+    // Check for each object
+    for (let c in collection) {
+        // If it is has property and value is truthy
+        if (collection[c].hasOwnProperty(pre) && Boolean(collection[c][pre])) {
+            counter++;
+        }
+    }
+    // Outside the loop, check to see if we got true for all of them and return true or false
+    return counter == collection.length;
+}
+
+console.log(truthCheck(
+                        [   { name: "Quincy", role: "Founder", isBot: false }, 
+                            { name: "Naomi", role: "", isBot: false }, 
+                            { name: "Camperbot", role: "Bot", isBot: true }
+                        ],
+                         "isBot"
+                      )
+);
+
 
 
 
