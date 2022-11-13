@@ -5948,6 +5948,49 @@ function pairElement(str) {
 pairElement("GCG");
 */
 
+function pairElement(str) {
+
+    /*
+    First, we want to create a variable that holds the matched nucleobase 
+    pairs. In DNA, A binds with T, and G binds with C.
+    Let the variable take as a value, a function with two parameters, one 
+    for the single basePair, and another that returns the paired bases as an array.
+    Use a switch case to check for all the possible combinations.
+    */
+    let matchBasePair = function (basePair, pairedArr) {
+        switch (basePair) {
+            case "A":
+                pairedArr.push(["A", "T"]);
+                break;
+            case "T":
+                pairedArr.push(["T", "A"]);
+                break;
+            case "C":
+                pairedArr.push(["C", "G"]);
+                break;
+            case "G":
+                pairedArr.push(["G", "C"]);
+                break;
+        }
+    };
+
+    /*
+    Next, we want to create a variable that returns the paired bases 
+    as an array. To do this, we use a for loop to iterate over the str 
+    passed in function and check if the value of str at index i has a 
+    possible pairing with the matchBasePair, and if it does, add it to 
+    the pairedNucleose arr.
+    */
+    const pairedNucleose = [];
+    for (let i = 0; i < str.length; i++) {
+        matchBasePair(str[i], pairedNucleose);
+    }
+
+    return pairedNucleose;
+}
+
+console.log(pairElement("GCG"));
+
 
 
 
