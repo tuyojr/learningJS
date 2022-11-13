@@ -6064,6 +6064,33 @@ final array should not be sorted in numerical order.
 Check the assertion tests for examples.
 */
 
+function uniteUnique(...arr) {
+
+    // Lets create a final empty arr that holds the final output
+    let finalArr = [];
+
+    /*
+    Loop through the arguments passed, and loop through the values 
+    of the arguments passed, use an if statement to check if the value 
+    of the argument is not present in the final array, and push it into 
+    the final array, if if is already there, it is not duplicated.
+    Finally, return the final array.
+    */
+    for (let i of arguments) {
+
+        for (let k of i) {
+
+            if (finalArr.indexOf(k) === -1) {
+
+                finalArr.push(k);
+            }
+        }
+    }
+    return finalArr;
+}
+
+console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]));
+
 
 
 
