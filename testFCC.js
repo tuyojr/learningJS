@@ -6176,6 +6176,61 @@ For example, sumFibs(10) should return 10 because all odd
 Fibonacci numbers less than or equal to 10 are 1, 1, 3, and 5.
 */
 
+function sumFibs(num) {
+    // let num1 = 0, 
+    //     num2 = 1, 
+    //     num3, 
+    //     fibArr = [0, 1];
+
+    // while(num1 + num2 <= num) {
+    //   num3 = num2;
+    //   num2 = num1 + num2;
+    //   num1 = num3;
+    //   fibArr.push(num2);
+    // }
+
+    // num = fibArr.filter(function(num4) {
+
+    //   return num4 > 0 && num4 % 2 > 0 
+    //   })
+
+    //   .reduce(function(num5, num6){
+
+    //     return num5 + num6
+    //   }, 0);
+
+    // return num;
+
+    // FCC Solution
+    /*
+    First, create a variable to keep record of the current and 
+    previous numbers along with the result that will be returned
+    */
+    let prevNumber = 0;
+    let currNumber = 1;
+    let result = 0;
+
+    /*
+    Use a while loop to make sure we do not go over the number given 
+    as parameter, and a modulo operand to check if the current number 
+    is odd or even. If it is odd, add it to the result.
+    Finally, complete the Fibonacci circle by rotating getting the 
+    next number and swapping values after.
+    Return the result.
+    */
+    while (currNumber <= num) {
+        if (currNumber % 2 !== 0) {
+            result += currNumber;
+        }
+        currNumber += prevNumber;
+        prevNumber = currNumber - prevNumber;
+    }
+
+    return result;
+}
+
+console.log(sumFibs(4));
+
 
 
 
