@@ -6306,7 +6306,16 @@ and 3. The answer here would be 6.
 
 function smallestCommons(arr) {
 
-    // FCC Solution
+    /*
+    FCC Solution
+    In this solution, we check every multiple of the largest value 
+    in the range until we find a value that is divisible by every 
+    value in the range.
+
+    The upper bound for this loop is the product of all values in the 
+    provided range, because this number will be divisible by every 
+    value in the range.
+    */
     // Setup
     const [min, max] = arr.sort((num1, num2) => num1 - num2);
     const numberDivisors = max - min + 1;
