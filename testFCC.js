@@ -6094,6 +6094,22 @@ console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]));
 
 
 
+// Convert HTML Entities
+
+/*
+function convertHTML(str) {
+  return str;
+}
+
+convertHTML("Dolce & Gabbana");
+
+Convert the characters &, <, >, " (double quote), and ' (apostrophe), 
+in a string to their corresponding HTML entities.
+*/
+
+
+
+
 
 
 
