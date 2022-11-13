@@ -6254,8 +6254,11 @@ are less than or equal to num.
 function sumPrimes(num) {
 
     /*
-    We loop over all values in our range, adding them to the sum if they are prime.
-  Our primality checking function returns false if the target number is divisible by any number in between 2 and the square root of the target number. We only need to check up to the square root because the square root of a number is the largest possible unique divisor.
+    We loop over all values in our range, adding them to the sum if they 
+    are prime. Our primality checking function returns false if the target 
+    number is divisible by any number in between 2 and the square root of 
+    the target number. We only need to check up to the square root because
+    the square root of a number is the largest possible unique divisor.
     */
 
     // Helper function to check primality
