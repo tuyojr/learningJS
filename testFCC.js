@@ -6378,6 +6378,20 @@ console.log(dropElements([1, 2, 3], function (n) { return n < 3; }));
 
 
 
+// Steamroller
+
+/*
+function steamrollArray(arr) {
+  return arr;
+}
+
+steamrollArray([1, [2], [3, [[4]]]]);
+
+Flatten a nested array. You must account for varying levels of nesting.
+*/
+
+
+
 
 
 
