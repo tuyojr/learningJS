@@ -6533,6 +6533,31 @@ sumTwoAnd(3) returns 5.
 If either argument isn't a valid number, return undefined.
 */
 
+function addTogether() {
+    // FCC Solution
+    // Create two variables that take arguments as values
+    const [first, second] = arguments;
+
+    // Check if the value type of the argument passed for the first 
+    // variable is not a number, we want to return undefined
+    if (typeof (first) !== "number")
+        return undefined;
+
+    // If the length of the arguments is 1, we want to return a 
+    // function that takes the second variable as an argument and 
+    // adds it to the first number 
+    if (arguments.length === 1)
+        return (second) => addTogether(first, second);
+
+    // Check if the value type of the argument passed for the second 
+    // variable is not a number, we want to return undefined
+    if (typeof (second) !== "number")
+        return undefined;
+    return first + second;
+}
+
+console.log(addTogether(2, 3));
+
 
 
 
